@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SatwikFX | Video Editor & Motion Designer</title>
+    <meta name="description" content="SatwikFX - Professional Video Editor, Motion Designer & VFX Artist. BSc Animation student at AAFT University, Noida.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <!-- GSAP + ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader-logo">SATWIK<span>FX</span></div>
+        <div class="loader-bar">
+            <div class="loader-fill"></div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor">
+        <div class="cursor-dot"></div>
+        <div class="cursor-ring"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="nav-logo">
+            SatwikFX
+            <span class="nav-logo-dot"></span>
+        </a>
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="skills.html">Skills</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="nav-mobile-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    <div class="nav-mobile-overlay"></div>
+    <div class="nav-mobile-menu">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <canvas id="particles-canvas"></canvas>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="dot"></span>
+                Available for Projects
+            </div>
+            <h1 class="hero-title">
+                SATWIK<span class="accent">FX</span>
+            </h1>
+            <p class="hero-subtitle">Video Editor | Motion Designer | VFX Artist</p>
+            <div class="hero-cta">
+                <a href="#featured" class="btn btn-primary">
+                    <i data-lucide="play"></i>
+                    View Showreel
+                </a>
+                <a href="contact.html" class="btn btn-secondary">
+                    <i data-lucide="mail"></i>
+                    Hire Me
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="50">0+</div>
+                    <div class="stat-label">Projects</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="20">0+</div>
+                    <div class="stat-label">Clients</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="2">0+</div>
+                    <div class="stat-label">Years</div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <i data-lucide="chevron-down" style="width:16px;height:16px;"></i>
+        </div>
+    </section>
+
+    
+
+    <!-- Static Carousel (3 cards) -->
+    <section class="carousel-section">
+        <div class="section-header fade-up">
+            <h2>Reel Showcase</h2>
+            <p>Selected Works</p>
+        </div>
+        <div class="carousel-container">
+            <div class="carousel-track-wrapper">
+                <div class="carousel-track">
+                    <a onclick="openVideoModal('1KMZepr9u3iKuyV79dYTcs6ie5t8NPnko')" class="carousel-card" data-position="center">
+                        <div class="carousel-card-visual">
+                            <img src="C:\Users\Satwik\Documents\AAFT WORK\Web media Design\Portfolio Website\Satwik_Portfolio-Website\Images\bhatko1.png" alt="VFX Breakdown" loading="lazy">
+                        </div>
+                        <div class="carousel-card-info">
+                            <h4>Fast-Paced Reel</h4>
+                            <p>High-energy edit engaging visuals, and fast storytelling.</p>
+                        </div>
+                    </a>
+                    <a onclick="openVideoModal('1Mpu6eNZ0d3vm5zyytLvdKGFfIn564BdH')" class="carousel-card" data-position="right">
+                        <div class="carousel-card-visual">
+                            <img src="C:\Users\Satwik\Documents\AAFT WORK\Web media Design\Portfolio Website\Satwik_Portfolio-Website\Images\website_reel.png" alt="Motion Graphics" loading="lazy">
+                        </div>
+                        <div class="carousel-card-info">
+                            <h4>Business Website Promo</h4>
+                            <p>Fast-paced reel edit designed for maximum engagement and audience retention</p>
+                        </div>
+                    </a>
+                    <a onclick="openVideoModal('1GcWIA2eE4gDX_TFd_vPjbcWfo5elF9Le')" class="carousel-card" data-position="hidden">
+                        <div class="carousel-card-visual">
+                            <img src="C:\Users\Satwik\Documents\AAFT WORK\Web media Design\Portfolio Website\Satwik_Portfolio-Website\Images\rishikesh_reel.png" alt="Color Grade" loading="lazy">
+                        </div>
+                        <div class="carousel-card-info">
+                            <h4>Rishikesh Stay Reel</h4>
+                            <p>Cinematic travel storytelling with immersive visuals and smooth transitions</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="carousel-nav">
+                <button class="carousel-arrow carousel-prev">
+                    <i data-lucide="chevron-left" style="width:20px;height:20px;"></i>
+                </button>
+                <div class="carousel-dots">
+                    <button class="carousel-dot active"></button>
+                    <button class="carousel-dot"></button>
+                    <button class="carousel-dot"></button>
+                </div>
+                <button class="carousel-arrow carousel-next">
+                    <i data-lucide="chevron-right" style="width:20px;height:20px;"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Teaser (Timeline) -->
+    <section class="timeline-section">
+        <div class="section-header fade-up">
+            <h2>Experience</h2>
+            <p>My Journey</p>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-date">April 2026 - Present</div>
+                <div class="timeline-role">Video Editor Intern</div>
+                <div class="timeline-company">HITGOC &bull; Noida</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">2025 - 2026</div>
+                <div class="timeline-role">Freelance Video Editor</div>
+                <div class="timeline-company">SatwikFX &bull; Worldwide</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Home Info Box -->
+    <section class="info-box">
+        <div class="fade-up">
+            <h2>Hi, I'm Satwik <span style="font-size:0.8em;">&#128075;</span></h2>
+            <p>BSc Animation student at AAFT University, Noida. Professional video editor with 1+ year freelance experience creating compelling visual stories.</p>
+            <div class="skill-chips">
+                <span class="chip">Premiere Pro</span>
+                <span class="chip">After Effects</span>
+                <span class="chip">DaVinci Resolve</span>
+                <span class="chip">Blender</span>
+            </div>
+            <div class="education-badge">
+                <i data-lucide="graduation-cap" style="width:16px;height:16px;"></i>
+                BSc Animation | AAFT University, Noida
+            </div>
+            <div class="hero-cta" style="margin-top:1.5rem;">
+                <a href="portfolio.html" class="btn btn-primary">
+                    <i data-lucide="folder-open"></i>
+                    View Portfolio
+                </a>
+                <a href="contact.html" class="btn btn-secondary">
+                    <i data-lucide="rocket"></i>
+                    Start a Project
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="footer-brand">SatwikFX</div>
+                <p class="footer-tagline">Crafting visual stories that captivate, inspire, and leave a lasting impression.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="skills.html">Skills</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <a href="mailto:satwiksingh.vfx@gmail.com">satwiksingh.vfx@gmail.com</a>
+                <div class="footer-social">
+                    <a href="#" aria-label="Instagram"><i data-lucide="instagram" style="width:18px;height:18px;"></i></a>
+                    <a href="#" aria-label="YouTube"><i data-lucide="youtube" style="width:18px;height:18px;"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin" style="width:18px;height:18px;"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-copyright">&copy; <span class="year">2026</span> SatwikFX. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i data-lucide="arrow-up" style="width:20px;height:20px;"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

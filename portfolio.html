@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | SatwikFX</title>
+    <meta name="description" content="Explore SatwikFX's portfolio - VFX Breakdowns, Motion Graphics, Color Grading, Transitions, Sound Design, and Cinematic Edits.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Page Background Effects -->
+    <div class="page-bg-effect">
+        <div class="page-bg-orb orb-1"></div>
+        <div class="page-bg-orb orb-2"></div>
+        <div class="page-bg-orb orb-3"></div>
+        <div class="page-bg-grid"></div>
+    </div>
+
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader-logo">SATWIK<span>FX</span></div>
+        <div class="loader-bar">
+            <div class="loader-fill"></div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor">
+        <div class="cursor-dot"></div>
+        <div class="cursor-ring"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="nav-logo">
+            SatwikFX
+            <span class="nav-logo-dot"></span>
+        </a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html" class="active">Portfolio</a>
+            <a href="skills.html">Skills</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="nav-mobile-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    <div class="nav-mobile-overlay"></div>
+    <div class="nav-mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html" class="active">Portfolio</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <h1 class="fade-up">Portfolio Showcase</h1>
+        <p class="fade-up">A curated collection of my best work</p>
+        <div class="page-hero-line fade-up"></div>
+    </section>
+
+    <!-- Full Static Carousel (6 cards) -->
+    <section class="carousel-section portfolio-section">
+        <div class="section-header-enhanced fade-up">
+            <span class="section-label">Featured</span>
+            <h2>Reel Collection</h2>
+            <p>All Works</p>
+            <div class="section-line"></div>
+        </div>
+        <div class="carousel-container">
+            <div class="carousel-track-wrapper">
+                <div class="carousel-track">
+                    <a onclick="openVideoModal('1KMZepr9u3iKuyV79dYTcs6ie5t8NPnko')" class="carousel-card" data-position="center">
+                        <div class="carousel-card-visual">
+                            <img src="C:\Users\Satwik\Documents\AAFT WORK\Web media Design\Portfolio Website\Satwik_Portfolio-Website\Images\bhatko1.png" alt="Fast-Paced Reel" loading="lazy">
+                        </div>
+                        <div class="carousel-card-info">
+                            <h4>Fast-Paced Reel</h4>
+                            <p>High-energy edit with engaging visuals and fast storytelling.</p>
+                        </div>
+                    </a>
+                    <a onclick="openVideoModal('1GcWIA2eE4gDX_TFd_vPjbcWfo5elF9Le')" class="carousel-card" data-position="right">
+                        <div class="carousel-card-visual">
+                            <img src="C:\Users\Satwik\Documents\AAFT WORK\Web media Design\Portfolio Website\Satwik_Portfolio-Website\Images\rishikesh_reel.png" alt="Rishikesh Stay Reel" loading="lazy">
+                        </div>
+                        <div class="carousel-card-info">
+                            <h4>Rishikesh Stay Reel</h4>
+                            <p>Cinematic travel storytelling with immersive visuals and smooth transitions</p>
+                        </div>
+                    </a>
+                    <a onclick="openVideoModal('1Mpu6eNZ0d3vm5zyytLvdKGFfIn564BdH')" class="carousel-card" data-position="hidden">
+                        <div class="carousel-card-visual">
+                            <img src="C:\Users\Satwik\Documents\AAFT WORK\Web media Design\Portfolio Website\Satwik_Portfolio-Website\Images\website_reel.png" alt="Business Website Promo" loading="lazy">
+                        </div>
+                        <div class="carousel-card-info">
+                            <h4>Business Website Promo</h4>
+                            <p>Fast-paced reel edit designed for maximum engagement and audience retention</p>
+                        </div>
+                    </a>
+                    <a onclick="openVideoModal('1RtLWpzp44E6-7XyUAlO-zF-lrpgX4dT2')" class="carousel-card" data-position="hidden">
+                        <div class="carousel-card-visual">
+                            <img src="C:\Users\Satwik\Documents\AAFT WORK\Web media Design\Portfolio Website\Satwik_Portfolio-Website\Images\point_reel.png" alt="Educational Content Reel" loading="lazy">
+                        </div>
+                        <div class="carousel-card-info">
+                            <h4>Educational Content Reel</h4>
+                            <p>Dynamic editing designed to keep viewers engaged from start to finish</p>
+                        </div>
+                    </a>
+                    <a onclick="openVideoModal('1OlNWPcsxMPzqRF1PhBIZP0lqH7XeIXO7')" class="carousel-card" data-position="hidden">
+                        <div class="carousel-card-visual">
+                            <img src="C:\Users\Satwik\Documents\AAFT WORK\Web media Design\Portfolio Website\Satwik_Portfolio-Website\Images\reward_reel.png" alt="Finance Story Reel" loading="lazy">
+                        </div>
+                        <div class="carousel-card-info">
+                            <h4>Finance Story Reel</h4>
+                            <p>Engaging reel edit with cinematic storytelling and high-retention visuals</p>
+                        </div>
+                    </a>
+                    <a onclick="openVideoModal('1wjqfz-D2WYphk1vaOmzoxh4RWN0yRdkf')" class="carousel-card" data-position="hidden">
+                        <div class="carousel-card-visual">
+                            <img src="C:\Users\Satwik\Documents\AAFT WORK\Web media Design\Portfolio Website\Satwik_Portfolio-Website\Images\ae_reel.png" alt="Hoztr Shimla Stay" loading="lazy">
+                        </div>
+                        <div class="carousel-card-info">
+                            <h4>Hoztr Shimla Stay</h4>
+                            <p>Dynamic travel edit featuring scenic visuals and high-retention pacing</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="carousel-nav">
+                <button class="carousel-arrow carousel-prev">
+                    <i data-lucide="chevron-left" style="width:20px;height:20px;"></i>
+                </button>
+                <div class="carousel-dots">
+                    <button class="carousel-dot active"></button>
+                    <button class="carousel-dot"></button>
+                    <button class="carousel-dot"></button>
+                    <button class="carousel-dot"></button>
+                    <button class="carousel-dot"></button>
+                    <button class="carousel-dot"></button>
+                </div>
+                <button class="carousel-arrow carousel-next">
+                    <i data-lucide="chevron-right" style="width:20px;height:20px;"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Grid -->
+    <section class="portfolio-section" style="padding:4rem 0 2rem;">
+        <div class="section-header-enhanced fade-up">
+            <span class="section-label">Gallery</span>
+            <h2>Project Gallery</h2>
+            <p>Browse by Category</p>
+            <div class="section-line"></div>
+        </div>
+        <div class="filter-bar fade-up">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="reels">Reels</button>
+            <button class="filter-btn" data-filter="vfx">VFX</button>
+            <button class="filter-btn" data-filter="motion-Graphics">Motion-Graphics</button>
+        </div>
+        <div class="project-grid">
+            <!-- Project 1: VFX -->
+            <div class="project-card fade-up" data-category="motion-Graphics" onclick="openVideoModal('1GCQxtmJ4FUIPLijHf3xu5oJ_1FLDgbXU')">
+                <div class="project-card-visual">
+                    <img src="C:\Users\Satwik\Documents\AAFT WORK\Web media Design\Portfolio Website\Satwik_Portfolio-Website\Images\product_ad.png" alt="Sci-Fi Portal Effect" loading="lazy">
+                </div>
+                <div class="project-card-info">
+                    <h4>Product Motion Ad</h4>
+                    <p>High-quality product showcase crafted with cinematic motion design</p>
+                    <div class="project-card-tags">
+                        <span class="project-tag">After Effects</span>
+                        <span class="project-tag">Motion-Graphic</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 2: Motion -->
+            <div class="project-card fade-up" data-category="motion-Graphics" onclick="openVideoModal('1LdNYuO-JAOv2i3smCa9hTqAY4hlqggZO')">
+                <div class="project-card-visual">
+                    <img src="C:\Users\Satwik\Documents\AAFT WORK\Web media Design\Portfolio Website\Satwik_Portfolio-Website\Images\logo_animation.png" alt="Kinetic Typography" loading="lazy">
+                </div>
+                <div class="project-card-info">
+                    <h4>Construction Logo Animation</h4>
+                    <p>Smooth After Effects logo animation with clean motion design and animated branding</p>
+                    <div class="project-card-tags">
+                        <span class="project-tag">After Effects</span>
+                        <span class="project-tag">Motion-Graphic</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 3: Reels -->
+            <div class="project-card fade-up" data-category="motion-Graphics" onclick="openVideoModal('1PcXYjk7DrXKvwqjRkZfzq8w6mvSWoT0U')">
+                <div class="project-card-visual">
+                    <img src="C:\Users\Satwik\Documents\AAFT WORK\Web media Design\Portfolio Website\Satwik_Portfolio-Website\Images\post_animation.png" alt="Brand Showreel 2024" loading="lazy">
+                </div>
+                <div class="project-card-info">
+                    <h4>Burger Social Media Ad</h4>
+                    <p>Eye-catching food advertisement with engaging visuals and dynamic motion design</p>
+                    <div class="project-card-tags">
+                        <span class="project-tag">After Effects</span>
+                        <span class="project-tag">Motion-Graphic</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 4: VFX -->
+            <div class="project-card fade-up" data-category="vfx" onclick="openVideoModal('1CfCsN3NGXg3eSM_v6Twivmgr-4um7MSI')">
+                <div class="project-card-visual">
+                    <img src="C:\Users\Satwik\Documents\AAFT WORK\Web media Design\Portfolio Website\Satwik_Portfolio-Website\Images\vfx_shot.png" alt="Lightning Strike VFX" loading="lazy">
+                </div>
+                <div class="project-card-info">
+                    <h4>VFX Environment Shot</h4>
+                    <p>Dark cinematic scene featuring 3D tracking and custom texture compositing</p>
+                    <div class="project-card-tags">
+                        <span class="project-tag">After Effects</span>
+                        <span class="project-tag">VFX</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 5: Motion -->
+            <div class="project-card fade-up" data-category="motion-Graphics" onclick="openVideoModal('1HIuk75dyA06g-0tMKKks1n3HhyB_frmc')">
+                <div class="project-card-visual">
+                    <img src="C:\Users\Satwik\Documents\AAFT WORK\Web media Design\Portfolio Website\Satwik_Portfolio-Website\Images\map_animation.png" alt="Logo Animation Pack" loading="lazy">
+                </div>
+                <div class="project-card-info">
+                    <h4>Map Animationn</h4>
+                    <p>Dynamic motion graphic with smooth transitions and engaging visual storytelling</p>
+                    <div class="project-card-tags">
+                        <span class="project-tag">After Effects</span>
+                        <span class="project-tag">Motion-Graphic</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 6: Reels -->
+            <div class="project-card fade-up" data-category="reels" onclick="openVideoModal('1wjqfz-D2WYphk1vaOmzoxh4RWN0yRdkf')">
+                <div class="project-card-visual">
+                    <img src="C:\Users\Satwik\Documents\AAFT WORK\Web media Design\Portfolio Website\Satwik_Portfolio-Website\Images\ae_reel.png" alt="Music Video Edit" loading="lazy">
+                </div>
+                <div class="project-card-info">
+                    <h4>Motion Graphic Reel</h4>
+                    <p>Creative animation with bold visuals and high-impact motion design.</p>
+                    <div class="project-card-tags">
+                        <span class="project-tag">After Effects</span>
+                        <span class="project-tag">Reels</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="info-box" style="padding-bottom:6rem;">
+        <div class="fade-up">
+            <h2>Want to See More?</h2>
+            <p>I have 150+ completed projects across various categories. Let's discuss your next project.</p>
+            <div class="hero-cta" style="margin-top:1.5rem;">
+                <a href="contact.html" class="btn btn-primary">
+                    <i data-lucide="mail"></i>
+                    Start a Project
+                </a>
+                <a href="skills.html" class="btn btn-secondary">
+                    <i data-lucide="bar-chart-2"></i>
+                    View Skills
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="footer-brand">SatwikFX</div>
+                <p class="footer-tagline">Crafting visual stories that captivate, inspire, and leave a lasting impression.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="skills.html">Skills</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <a href="mailto:satwikfx@email.com">satwikfx@email.com</a>
+                <div class="footer-social">
+                    <a href="#" aria-label="Instagram"><i data-lucide="instagram" style="width:18px;height:18px;"></i></a>
+                    <a href="#" aria-label="YouTube"><i data-lucide="youtube" style="width:18px;height:18px;"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin" style="width:18px;height:18px;"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-copyright">&copy; <span class="year">2026</span> SatwikFX. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i data-lucide="arrow-up" style="width:20px;height:20px;"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
